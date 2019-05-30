@@ -35,8 +35,9 @@ We develop a community detection based pipeline to clean the noisy MS-Celeb-1M f
 As the diversity of faces is preserved in multiple large communities, our cleaning results have both high cleanness and rich data diversity. More details can be found in our paper [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/).
 
 The picure below shows the images of Phil Upchurch before and after our cleaning
-![](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
-Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are the cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
+![1234](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
+Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are our cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
+
 
 
 
