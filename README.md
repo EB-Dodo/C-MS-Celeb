@@ -39,7 +39,7 @@ The picture below shows the images of Phil Upchurch before and after our cleanin
 Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are our cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
 
 The diagram below illustrates our community detection based cleaning method. We first construct a face similarity graph using pre-trained face recognition models. Each node in the similarity graph represents one image and the weight of the link between two nodes quantifies the similarity between these two images. Then we remove the weak links and run the community detection algorithm on this graph. Finally, we preserve the images in the large communities (colored communities on the right in this diagram) and remove the scattered nodes and minor communities (grey nodes in the diagram). Thus, we are able to achieve both high cleanness and rich data diversity during the data cleaning.
-![](https://github.com/JinRC/C-MS-Celeb/blob/master/community_detection_clean.png)
+![](https://github.com/JinRC/C-MS-Celeb/blob/master/community_detection_clean.png =250x250)
 
 
 ## Benefits of using C-MS-Celeb to train a face recognition model
