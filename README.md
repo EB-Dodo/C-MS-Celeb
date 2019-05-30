@@ -1,6 +1,7 @@
 # C-MS-Celeb
 This is a clean version of  MS-Celeb-1M face dataset, containing 6,464,018 images of 94,682 celebrities.
-The original [MS-Celeb-1M](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/)
+Since the original [MS-Celeb-1M](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/) has too much mislabeled images, we would like to clean this dataset for better model training.
+The paper of our cleaning work can be found [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/)
 
 ## Data overview
 Based on our empirical evaluation, approximate 97.3% of images in C-MS-Celeb are correctly labeled.
@@ -9,6 +10,7 @@ This face database is the cleaning result in our paper: "A Community Detection A
 
 ## Our cleaning method based on community detection
 
+## Benifits of using C-MS-Celeb to train a face recognitioni model
 
 ## How to use C-MS-Celeb
 C-MS-Celeb has two TXT files in clean_list.7z: "clean_list_128Vec_WT051_P010.txt" and "relabel_list_128Vec_T058.txt", which are the cleaned lists of facial images.
@@ -22,7 +24,8 @@ Note that C-MS-Celeb here is only the cleaned lable list. In order to use this d
 The raw MS-Celeb-1M dataset can be downloaded on this website:
 https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/
 
-If you use this face database, please cite our paper as below:
+## Citation information
+If you use this face database to train your model, please cite our paper as below:
 
 Chi Jin, Ruochun Jin, Kai Chen, and Yong Dou, “A Community Detection Approach to Cleaning Extremely Large Face Database,” Computational Intelligence and Neuroscience, vol. 2018, Article ID 4512473, 10 pages, 2018. doi:10.1155/2018/4512473
 
