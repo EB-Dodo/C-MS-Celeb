@@ -5,6 +5,15 @@ Since the original [MS-Celeb-1M](https://www.microsoft.com/en-us/research/projec
 The paper of our cleaning work, "A Community Detection Approach to Cleaning Extremely Large Face Database", can be found [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/)
 
 ## Data overview
+Our C-MS-Celeb cleaned dataset has 6,464,018 images belonging to 94,682 celebrities.
+The table below compares ours with other publicly available cleaned MS-Celeb datasets:
+
+| Datasets | Celebrities |  Images  |
+| :--------: | :--------:| :------: |
+| Original Dataset |  99,892  |  8,456,240 |
+| XiangWu's Cleaned Dataset |  79099  |  5,049,824 |
+| MS-Celeb-1M WashList Cleaned Dataset |  78579 |  4,621,640  |
+| C-MS-Celeb Cleaned Dataset |  94,682 |  6,464,018  |
 Based on our empirical evaluation, approximate 97.3% of images in C-MS-Celeb are correctly labeled.
 
 
