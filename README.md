@@ -35,10 +35,11 @@ We develop a community detection based pipeline to clean the noisy MS-Celeb-1M f
 As the diversity of faces is preserved in multiple large communities, our cleaning results have both high cleanness and rich data diversity. More details can be found in our paper [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/).
 
 The picure below shows the images of Phil Upchurch before and after our cleaning
-![1234](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
+![](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
 Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are our cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
 
-
+The diagram below illustrates our community detection based cleaning method. We first construct a face similarity graph using pretrained face recognition models. Each node in the similarity graph represents a image and the weight of the link between two nodes quantifiles the similarity between these two images. Then we remove the weak links and run the community detection algorithm on this graph. Finally, we preserve the images in the large communities (coloured communities on the right in this diagram) and remove the scattered nodes and minor communities (grey nodes in the diagram). Thus, we are able to achieve both high cleanness and rich data diversity during the data cleaning.
+![](https://github.com/JinRC/C-MS-Celeb/blob/master/community_detection_clean.png)
 
 
 ## Benifits of using C-MS-Celeb to train a face recognitioni model
