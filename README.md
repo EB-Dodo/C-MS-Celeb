@@ -13,7 +13,7 @@ The table below compares ours with other publicly available cleaned MS-Celeb dat
 | Original Dataset |  99,892  |  8,456,240 |
 | XiangWu's Cleaned Dataset |  79099  |  5,049,824 |
 | MS-Celeb-1M WashList Cleaned Dataset |  78579 |  4,621,640  |
-| C-MS-Celeb Cleaned Dataset |  94,682 |  6,464,018  |
+| C-MS-Celeb Cleaned Dataset |  **94,682** |  **6,464,018**  |
 
 Our C-MS-Celeb is **large, clean and diverse**.
 
@@ -25,10 +25,20 @@ Second, based on our empirical evaluation, approximate 97.3% of images in C-MS-C
 
 ### Diverse
 Third, our community detection based cleaning method can also preserve the diversity of facial images for each individual.
-Here are some sample images in our cleaning result:
+Here are some sample images from "Lady Gaga" and "Quinn Cummings" in our cleaning result:
 ![](https://github.com/JinRC/C-MS-Celeb/blob/master/sample_images.png)
+From these sample results, we can see that images with diverse makeups can be preserved during cleaning (Lady Gaga on the left half).
+The diversity of different ages can also be observed from the cleaning results (Quinn Cummings on the right half).
 
 ## Our cleaning method based on community detection
+We develop a community detection based pipeline to clean the noisy MS-Celeb-1M face dataset. 
+As the diversity of faces is preserved in multiple large communities, our cleaning results have both high cleanness and rich data diversity. More details can be found in our paper [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/).
+
+The picure below shows the images of Phil Upchurch before and after our cleaning
+![](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
+Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are the cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
+
+
 
 ## Benifits of using C-MS-Celeb to train a face recognitioni model
 
