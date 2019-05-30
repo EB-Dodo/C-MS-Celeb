@@ -44,8 +44,8 @@ The diagram below illustrates our community detection based cleaning method. We 
 
 ## Benefits of using C-MS-Celeb to train a face recognition model
 We use our C-MS-Celeb dataset to train a face recognition model and the image below shows that using C-MS-Celeb for model training can increases the model's performance. Check [our paper](https://www.hindawi.com/journals/cin/2018/4512473/abs/) for more benefit details.
-![](https://github.com/JinRC/C-MS-Celeb/blob/master/PR-curve.png)
-<img src="https://github.com/JinRC/C-MS-Celeb/blob/master/PR-curve.png" width="48">
+
+<img src="https://github.com/JinRC/C-MS-Celeb/blob/master/PR-curve.png" width="500">
 
 ## How to use C-MS-Celeb
 C-MS-Celeb has two TXT files in clean_list.7z: "clean_list_128Vec_WT051_P010.txt" and "relabel_list_128Vec_T058.txt", which are the cleaned lists of facial images.
