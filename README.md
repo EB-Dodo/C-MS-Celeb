@@ -1,5 +1,5 @@
 # C-MS-Celeb
-This is a clean version of  MS-Celeb-1M face dataset, containing 6,464,018 images of 94,682 celebrities.
+This is a clean version of MS-Celeb-1M face dataset, containing 6,464,018 images of 94,682 celebrities.
 Since the original [MS-Celeb-1M](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/) has too much mislabeled images, we would like to clean this dataset for better model training.
 
 The paper of our cleaning work, "A Community Detection Approach to Cleaning Extremely Large Face Database", can be found [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/)
@@ -34,15 +34,17 @@ The diversity of different ages can also be observed from the cleaning results (
 We develop a community detection based pipeline to clean the noisy MS-Celeb-1M face dataset. 
 As the diversity of faces is preserved in multiple large communities, our cleaning results have both high cleanness and rich data diversity. More details can be found in our paper [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/).
 
-The picure below shows the images of Phil Upchurch before and after our cleaning
+The picture below shows the images of Phil Upchurch before and after our cleaning
 ![](https://github.com/JinRC/C-MS-Celeb/blob/master/before_after.png)
 Images with red squares on the left are mislabeled images in the MS-Celeb-1M face dataset and images on the right are our cleaning results. We can again see that diverse Phil Upchurch of all ages is preserved during the cleaning.
 
-The diagram below illustrates our community detection based cleaning method. We first construct a face similarity graph using pretrained face recognition models. Each node in the similarity graph represents a image and the weight of the link between two nodes quantifiles the similarity between these two images. Then we remove the weak links and run the community detection algorithm on this graph. Finally, we preserve the images in the large communities (coloured communities on the right in this diagram) and remove the scattered nodes and minor communities (grey nodes in the diagram). Thus, we are able to achieve both high cleanness and rich data diversity during the data cleaning.
+The diagram below illustrates our community detection based cleaning method. We first construct a face similarity graph using pre-trained face recognition models. Each node in the similarity graph represents one image and the weight of the link between two nodes quantifies the similarity between these two images. Then we remove the weak links and run the community detection algorithm on this graph. Finally, we preserve the images in the large communities (colored communities on the right in this diagram) and remove the scattered nodes and minor communities (grey nodes in the diagram). Thus, we are able to achieve both high cleanness and rich data diversity during the data cleaning.
 ![](https://github.com/JinRC/C-MS-Celeb/blob/master/community_detection_clean.png)
 
 
-## Benifits of using C-MS-Celeb to train a face recognitioni model
+## Benefits of using C-MS-Celeb to train a face recognition model
+We use our C-MS-Celeb dataset to train a face recognition model and the image below shows that using C-MS-Celeb for model training can increases the model's performance. Check [our paper](https://www.hindawi.com/journals/cin/2018/4512473/abs/) for more benefit details.
+![](https://github.com/JinRC/C-MS-Celeb/blob/master/PR-curve.png)
 
 ## How to use C-MS-Celeb
 C-MS-Celeb has two TXT files in clean_list.7z: "clean_list_128Vec_WT051_P010.txt" and "relabel_list_128Vec_T058.txt", which are the cleaned lists of facial images.
@@ -52,7 +54,7 @@ C-MS-Celeb has two TXT files in clean_list.7z: "clean_list_128Vec_WT051_P010.txt
 For both files, the first column is the identity label of the image and the second column is the path of the image file.
 
 
-Note that C-MS-Celeb here is only the cleaned lable list. In order to use this dataset, one needs firstly download all images of the MS-Celeb-1M dataset and then filter out the noisy (mislabeled) images according to the path in C-MS-Celeb's TXT files. You may need to combine these two TXT files as one before filtering out mislabeled images.
+Note that C-MS-Celeb here is only the cleaned label list. In order to use this dataset, one needs firstly download all images of the MS-Celeb-1M dataset and then filter out the noisy (mislabeled) images according to the path in C-MS-Celeb's TXT files. You may need to combine these two TXT files as one before filtering out mislabeled images.
 The raw MS-Celeb-1M dataset can be downloaded on this website:
 https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/
 
