@@ -1,6 +1,7 @@
 # C-MS-Celeb
 This is a clean version of  MS-Celeb-1M face dataset, containing 6,464,018 images of 94,682 celebrities.
 Since the original [MS-Celeb-1M](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/) has too much mislabeled images, we would like to clean this dataset for better model training.
+
 The paper of our cleaning work can be found [here](https://www.hindawi.com/journals/cin/2018/4512473/abs/)
 
 ## Data overview
