@@ -15,12 +15,15 @@ The table below compares ours with other publicly available cleaned MS-Celeb dat
 | MS-Celeb-1M WashList Cleaned Dataset |  78579 |  4,621,640  |
 | C-MS-Celeb Cleaned Dataset |  94,682 |  6,464,018  |
 
-Our C-MS-Celeb is large, clean and diverse.
+Our C-MS-Celeb is **large, clean and diverse**.
 
+### Large
 First, from this table, compared with other cleaning lists, we can see that C-MS-Celeb preserves more people with more images during the cleaning. 
 
+### Clean
 Second, based on our empirical evaluation, approximate 97.3% of images in C-MS-Celeb are correctly labeled.
 
+### Diverse
 Third, our community detection based cleaning method can also preserve the diversity of facial images for each individual.
 Here are some sample images in our cleaning result:
 ![](https://github.com/JinRC/C-MS-Celeb/blob/master/sample_images.png)
