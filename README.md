@@ -11,8 +11,8 @@ The table below compares ours with other publicly available cleaned MS-Celeb dat
 | Datasets | Celebrities |  Images  |
 | :--------: | :--------:| :------: |
 | Original Dataset |  99,892  |  8,456,240 |
-| XiangWu's Cleaned Dataset |  79099  |  5,049,824 |
-| MS-Celeb-1M WashList Cleaned Dataset |  78579 |  4,621,640  |
+| XiangWu's Cleaned Dataset |  79,099  |  5,049,824 |
+| MS-Celeb-1M WashList Cleaned Dataset |  78,579 |  4,621,640  |
 | C-MS-Celeb Cleaned Dataset |  **94,682** |  **6,464,018**  |
 
 Our C-MS-Celeb is **large, clean and diverse**.
