@@ -67,9 +67,18 @@ The raw MS-Celeb-1M dataset can be downloaded on this website:
 https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/
 
 ## Citation information
-If you use this face database to train your model, please cite our paper as below:
+If you use this dataset, please cite our paper as below:
 
 Chi Jin, Ruochun Jin, Kai Chen, and Yong Dou, “A Community Detection Approach to Cleaning Extremely Large Face Database,” Computational Intelligence and Neuroscience, vol. 2018, Article ID 4512473, 10 pages, 2018. doi:10.1155/2018/4512473
+
+@article{jin2018community,
+  title={A community detection approach to cleaning extremely large face database},
+  author={Jin, Chi and Jin, Ruochun and Chen, Kai and Dou, Yong},
+  journal={Computational intelligence and neuroscience},
+  volume={2018},
+  year={2018},
+  publisher={Hindawi}
+}
 
 The link of our paper "A Community Detection Approach to Cleaning Extremely Large Face Database" is:
 https://www.hindawi.com/journals/cin/2018/4512473/
