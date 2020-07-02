@@ -50,7 +50,7 @@ The diagram below illustrates our community detection based cleaning method. We 
 
 
 ## Benefits of using C-MS-Celeb to train a face recognition model
-We use our C-MS-Celeb dataset to train a face recognition model and the image below shows that using C-MS-Celeb for model training can increases the model's performance. Check [our paper](https://www.hindawi.com/journals/cin/2018/4512473/abs/) for more benefit details.
+We use our C-MS-Celeb dataset to train a face recognition model and the image below shows that using C-MS-Celeb for model training can increase the model's performance. Check [our paper](https://www.hindawi.com/journals/cin/2018/4512473/abs/) for more benefit details.
 
 <img src="https://github.com/JinRC/C-MS-Celeb/blob/master/PR-curve.png" width="400">
 
