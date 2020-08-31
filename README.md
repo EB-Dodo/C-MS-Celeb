@@ -83,4 +83,4 @@ Chi Jin, Ruochun Jin, Kai Chen, and Yong Dou, “A Community Detection Approach 
 The link of our paper "A Community Detection Approach to Cleaning Extremely Large Face Database" is:
 https://www.hindawi.com/journals/cin/2018/4512473/
 
-update test
+test
